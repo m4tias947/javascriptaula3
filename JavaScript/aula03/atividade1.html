@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    <form>
+        <label>Número:</label>
+        <input type="number" id="número" /><br>
+       
+        
+    </form>
+    <button onclick="calcular()">calcular</button>
+    <p id="resultado" ></p>
+</body>
+<script>
+    function calcular() {
+        let resultado=document.getElementById("resultado");
+        let número = Number(document.getElementById("número").value);
+        if (número % 2 === 0) {
+        resultado.innerHTML = " é par";
+    } else {
+        resultado.innerHTML = " é ímpar";
+    }
+    
+}
+    </script>
+</html>

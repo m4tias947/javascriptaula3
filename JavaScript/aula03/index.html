@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula03</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form>
+        <label>Idade:</label>
+        <input type="number" id="idade" /><br>
+       
+        
+    </form>
+    <button onclick="calcular()">calcular</button>
+    <P id="resultado" ></P>
+</body>
+<script>
+      function calcular(){
+          let idade = Number(document.getElementById("idade").value);
+          
+
+          if(idade > 18){
+             resultado.innerHTML = "Já pode ser Preso!!"
+          }
+          else if(idade == 18){
+             resultado.innerHTML = "Bem vindo ao 18tão"
+          }
+          else{
+             resultado.innerHTML = "Esse site não e para crianças"
+          }
+          document.getElementById("resultado").innerHTML = soma;
+          
+ }
+
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Ano:</label>
+        <br><input type="number" id="ano" /><br>
+        <!-- <label>altura:</label>
+        <br><input type="number" id="altura" /><br> -->
+       
+        
+    </form>
+    <button onclick="calcular()">prever</button>
+    <P id="resultado" ></P>
+</body>
+<script>
+    function calcular(){
+        let anos = Number(document.getElementById("ano").value);
+        
+
+        if((anos % 4==0) && (anos % 100 !=0)){
+           resultado.innerHTML = "Bissexto"
+        }
+        else if((anos % 4==0 ) && ((anos % 100==0) && (anos % 400==0))){
+           resultado.innerHTML = "Bissexto"
+        }
+        else{
+           resultado.innerHTML = "Não e Bissexto"
+        }
+        document.getElementById("resultado").innerHTML = soma;
+        
+}
+
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade4</title>
+</head>
+
+<body>
+    <form>
+        <label>nota1:</label>
+        <br><input type="number" id="nota1" /><br>
+        <label>nota2:</label>
+        <br><input type="number" id="nota2" /><br>
+
+
+    </form>
+    <button onclick="calcular()">calcular</button>
+    <P id="resultado"></P>
+</body>
+<script>
+    function calcular() {
+        let nota1 = Number(document.getElementById("nota1").value);
+        let nota2 = Number(document.getElementById("nota2").value);
+        let resultado = document.getElementById("resultado");
+
+        let notas = (nota1 + nota2) / 2;
+        if (notas >= 7) {
+            resultado.innerHTML = "Sua Média é: " + notas.toFixed(2) + "Aprovado";
+        }
+        else if ((notas < 7) && (notas >= 5)) {
+            resultado.innerHTML = "Sua Média é: " + notas.toFixed(2) + " recuperação";
+        }
+
+        else {
+            resultado.innerHTML = "Sua Média é: " + notas.toFixed(2) + " Reprovado";
+        }
+
+    }
+
+</script>
+
+</html>

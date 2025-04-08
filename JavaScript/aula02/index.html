@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula02</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form>
+        <label>Número 1:</label>
+        <input type="number" id="num1" /><br>
+        <label>Número 2:</label>
+        <input type="number" id="num2" /><br>
+        
+    </form>
+    <button onclick="calcular()">calcular</button>
+    <P id="resultado" ></P>
+</body>
+<script>
+      function calcular(){
+          let num1 = Number(document.getElementById("num1").value);
+          let num2 = Number(document.getElementById("num2").value);
+          let soma = num1 * num2;
+          document.getElementById("resultado").innerHTML = soma;
+          
+ }
+
+</script>
+</html>
