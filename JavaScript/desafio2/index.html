@@ -21,14 +21,14 @@
           let dis = Number(document.getElementById("dis").value);
           
 
-          if(dis <= 100   )  {
-             resultado.innerHTML = "Distância:"+ notas.toFixed(2) +
+          if(dis <= 100  * 1.50 )  {
+             resultado.innerHTML = "Acesso liberado"
           }
-          else if(dis >= 100 ){
-             resultado.innerHTML = "Distância:"+ notas.toFixed(2) +
+          else if(dis >= 100 * 1.25){
+             resultado.innerHTML = "Acesso liberado"
           }
           else{
-             resultado.innerHTML = "Distância:"+ notas.toFixed(2) +
+             resultado.innerHTML = "Acesso negado"
           }
           document.getElementById("resultado").innerHTML = soma;
           
