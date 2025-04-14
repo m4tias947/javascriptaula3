@@ -11,26 +11,25 @@
         <input type="number" id="dis" /><br>
         
         
-        <button onclick="calcular()">calcular</button>
-        <P id="resultado" ></P>
+        
         
     </form>
+    <button onclick="calcular()">calcular</button>
+        <P id="resultado" ></P>
 </body>
 <script>
       function calcular(){
           let dis = Number(document.getElementById("dis").value);
-          
+          let frete = 0;
 
-          if(dis <= 100  * 1.50 )  {
-             resultado.innerHTML = "Acesso liberado"
+          if(dis <= 100  * 1.50 ){
+                frete = dis * 1.5;
           }
-          else if(dis >= 100 * 1.25){
-             resultado.innerHTML = "Acesso liberado"
-          }
+          
           else{
-             resultado.innerHTML = "Acesso negado"
+            frete = dis * 1.2;
           }
-          document.getElementById("resultado").innerHTML = soma;
+          document.getElementById("resultado").innerHTML = "O valor do frete é R$"+frete;
           
  }
 

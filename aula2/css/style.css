@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: blue;
+    padding: 5em;
+    text-align: center;
+    color: white;
+}
+footer{
+    background-color: blue;
+    padding: 3em;
+    text-align: center;
+    color: white;
+}
+main{
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+#btnHomem{
+background-color: rgb(120, 138, 206);
+padding: 2em;
+border-radius: 4em;
+margin-left: 3em;
+}
+#btnMulher{
+background-color: blueviolet;
+padding: 2em;
+border-radius: 4em;
+margin-left: 3em;
+}
+#voltar{
+    background-color: rgb(51, 51, 51);
+    padding: 2em;
+    border-radius: 4em;
+    margin-left: 3em; 
+}
